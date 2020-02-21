@@ -34,5 +34,36 @@ Node rverseList(Node head)
 //Method to reverse a Linked List (Bidirectional)
 class Node
 {
+	private int data;
+	public Node next=null;
+	public Node previous=null;
 	
+	public void setData(int data)
+	{
+		this.data=data;
+	}
+	
+	public int getData()
+	{
+		return data;
+	}
+}
+
+
+Node reverseList(Node head)
+{
+	Node current=head;
+	Node previous=null;
+	Node next=null;
+	
+	while(current!=null)
+	{
+		next=current.next;
+		current.next=previous;
+		current.previous=next;
+		previous=current;
+		current=next;
+	}
+	head=previous;
+	return head;
 }
