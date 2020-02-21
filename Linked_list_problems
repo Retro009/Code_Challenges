@@ -4,13 +4,13 @@ Node rverseList(Node head)
   	Node previous=null;
   	Node next=null;
 	
-	while(current.next!=null)
+	while(current!=null)
 	{
 		next=current.next;
 		current.next=previous;
 		previous=current;
 		current=next;
 	}
-	head=current;
+	head=previous;
 	return head;
 }
