@@ -1,3 +1,5 @@
+//Method to reverse a Linked List (unidirectional)
+
 Node rverseList(Node head)
 {
   	Node current=head;
@@ -14,3 +16,6 @@ Node rverseList(Node head)
 	head=previous;
 	return head;
 }
+
+//Method to reverse a Linked List (Bidirectional)
+
