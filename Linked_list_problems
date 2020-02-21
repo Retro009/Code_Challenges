@@ -1,4 +1,18 @@
 //Method to reverse a Linked List (unidirectional)
+class Node
+{
+	private int data;
+	public Node next=null;
+	
+	public void setData(int data)
+	{
+		this.data=data;
+	}
+	public int getData()
+	{
+		return data;
+	}
+}
 
 Node rverseList(Node head)
 {
@@ -18,4 +32,7 @@ Node rverseList(Node head)
 }
 
 //Method to reverse a Linked List (Bidirectional)
-
+class Node
+{
+	
+}
