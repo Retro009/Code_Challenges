@@ -1,8 +1,8 @@
 Node rverseList(Node head)
 {
-  Node current=head;
-  Node previous=null;
-  Node next=null;
+  	Node current=head;
+  	Node previous=null;
+  	Node next=null;
 	
 	while(current.next!=null)
 	{
